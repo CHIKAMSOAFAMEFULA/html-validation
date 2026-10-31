@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break it, fix it and validate it</title>
+</head>
+<body>
+    <h1>break it, fix it and validate it</h1>
+    <p>In this exercise, you will break the HTML code, fix it and validate it.
+     You will be given a broken HTML code and you will have to fix it and 
+     validate it using the W3C validator.</p>  
+     <div class="form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+     </div>  
+     <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>problem identified</th>
+                    <th>location (line)</th>
+                    <th>fix</th>
+                    <th>why the fix matters</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Incorrect closing heading tag: (h1> is closed with /h3>.</td>
+                    <td>line 9</td>
+                    <td>Change /h3> to /h1></td>
+                    <td>Ensures HTML tags are properly matched and maintains correct document structure.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Empty for attribute in the Name label.</td>
+                    <td>line 15</td>
+                    <td>Change label for=""> to label for="name"></td>
+                    <td>Connects the label to the correct input, improving accessibility.</td>
+                </tr>
+                </tbody>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>Missing id attribute in the Name input field.</td>
+                    <td>line 16</td>
+                    <td>Add id="name" to the input element.</td>
+                    <td>Allows the label to identify and associate with the Name input field.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Missing id attribute in the Email input field.</td>
+                    <td>line 17 - line 18</td>
+                    <td>Add id="email" to the input element.</td>
+                    <td>Ensures users, including those using screen readers, can identify the email field through its label.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>Missing required attribute in the Email input field.</td>
+                    <td>line 17 - line 18</td>
+                    <td>Add required attribute to the input element.</td>
+                    <td>Ensures that users cannot submit the form without providing an email address, improving data collection and user experience.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Missing closing </form> tag.</td>
+                    <td>line 19</td>
+                    <td>Add </form> before the closing </div> tag.</td>
+                    <td>Ensures that the form is properly closed, maintaining valid HTML structure and preventing potential rendering issues.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>7</td>
+                    <td>Missing closing </div> tag for the form container.</td>
+                    <td>line 20</td>
+                    <td>Add </div> after the closing </form> tag.</td>
+                    <td>Ensures that the div container is properly closed, maintaining valid HTML structure and preventing potential rendering issues.</td>
+                </tr>
+        </table>
+     </div>
+</body>
+</html>
